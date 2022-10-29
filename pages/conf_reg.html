@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK rel="STYLESHEET" TYPE="text/css" HREF="/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на конференции</title>
+</head>
+<body>
+    <header>
+        <h1>Веб-технологии</h1>
+    </header>
+    <main>
+    <h2>Регистрация на конференции</h2>
+    <form action="" method="post">
+        <div>
+            <label for="username">ФИО:</label>
+            <input type="text" name="username" id="username" required placeholder="Введите ФИО" pattern="[А-Яа-я]" size="20">
+        </div>
+        <div>
+            <label for="tel">Контактный телефон:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Введите номер">
+        </div>
+        <div>
+            <label for="email">Адрес электронной почты:</label>
+            <input type="email" name="email" id="email" placeholder="Введите адрес почты">
+        </div>
+        <div>
+            <label for="section">Выберите секцию конференции</label><br>
+            <select name="section" id="section">
+                <option value="math">математика</option>
+                <option value="phys">физика</option>
+                <option value="inform">информатика</option>
+            </select>
+        </div>
+        <div>
+            <label for="speaker">Участие с докладом</label>
+            <input type="checkbox" name="speaker" id="speaker">
+        </div>
+        <div>
+            <label for="report">Введите тему доклада</label> <br>
+            <textarea name="report" id="report" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <div>Выберите форму участия</div>
+            <input type="radio" name="edutype" id="offline" checked> <label for="offline">Очная форма</label> <br>
+            <input type="radio" name="edutype" id="off-on"> <label for="off-on">Очно-заочная форма</label> <br>
+            <input type="radio" name="edutype" id="online"> <label for="online">Заочная форма</label> <br>
+        </div>
+        <div>
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+    </form>
+    </main>
+    <aside>
+        Это боковая панель
+    </aside>
+    <footer>
+        <h3>
+            2022-2023 учебный год
+        </h3>
+    </footer>
+</body>
+</html>
